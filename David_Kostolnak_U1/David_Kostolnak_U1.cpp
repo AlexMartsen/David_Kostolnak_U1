@@ -3,10 +3,14 @@
 
 #include "pch.h"
 #include <iostream>
+#include "heap_monitor.h"
 
 int main()
 {
-    std::cout << "Hello World!\n"; 
+	initHeapMonitor();
+    std::cout << "Hello World!\n";
+
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
