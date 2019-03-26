@@ -5,6 +5,7 @@
 
 
 
+
 Vehicle::Vehicle(string numberPlate, double loadCapacity, double operatingCosts)
 {
 	this->numberPlate = numberPlate;
@@ -16,8 +17,21 @@ Vehicle::~Vehicle()
 {
 	numberPlate = "";
 }
-void Vehicle::writeVehicle()
+
+string Vehicle::getNumberPlate()
 {
-	cout << "NumberPlate: " << numberPlate << "LoadCapacity: " << loadCapacity << "OperatingCosts: " << operatingCosts << endl;
+	return numberPlate;
 }
+
+double Vehicle::getLoadCapacity()
+{
+	return loadCapacity;
+}
+
+double Vehicle::getOperatingCosts()
+{
+	//tu bude treba dokodit bo sa nejak preratavaju
+	return operatingCosts;
+}
+
 

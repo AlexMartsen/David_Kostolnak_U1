@@ -11,14 +11,14 @@ Drone::Drone(string serialNumber, bool typeDrone)
 	this->typeDrone = typeDrone;
 	 if(typeDrone)
 	 {
-		 this->loadCapacity = 2;
-		 this->speed = 80;
-		 this->flightTime = 40;
+		 this->maxLoadCapacity = 2;
+		 this->maxSpeed = 80;
+		 this->maxFlightTime = 40;
 		 this->chargingTime = 30;//nabije sa na fullku lebo 10 percent nabije 3minuty
 	 }
-	 this->loadCapacity = 5;
-	 this->speed = 40;//km/h
-	 this->flightTime = 60;//cas
+	 this->maxLoadCapacity = 5;
+	 this->maxSpeed = 40;//km/h
+	 this->maxFlightTime = 60;//cas
 	 this->chargingTime = 50;//cas 
 
 }

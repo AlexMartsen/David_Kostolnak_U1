@@ -7,25 +7,28 @@
 
 Company::Company()
 {
-
+	vehiclePark = new ArrayList<Vehicle*>();
 }
 
 
 Company::~Company()
 {
-	vehiclePark = new ArrayList<Vehicle*>();
+	
 }
 
 void Company::addVehicleToPark(Vehicle * vehicle)
 {
 	vehiclePark->add(vehicle);
 }
-void Company::writeVehiclesAddedToPark()
+void Company::writeVehiclesAddedToPark(Vehicle * vehicle)
 {
-	int i = 0;
-	for (auto *vehicle_park : *vehiclePark) {
-		cout << i << "." << vehicle_park->writeVehicle()  << endl;
-		i++;
+	if (vehiclePark->isEmpty()) {
+		cout << "Vozidla niesu dostupne!!" << endl;
+	}
+	else {
+		for (auto *vehicle : *vehiclePark) {
+			cout << vehicle->getNumberPlate() << endl;
+		}
 	}
 	
 

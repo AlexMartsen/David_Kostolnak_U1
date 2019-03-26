@@ -15,6 +15,6 @@ public:
 	Company();
 	~Company();
 	void addVehicleToPark(Vehicle* vehicle);
-	void writeVehiclesAddedToPark();
+	void writeVehiclesAddedToPark(Vehicle * vehicle);
 };
 

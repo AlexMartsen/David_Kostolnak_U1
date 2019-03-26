@@ -7,9 +7,9 @@ class Drone
 private:
 	string serialNumber;
 	bool typeDrone;
-	double loadCapacity;
-	double speed;
-	double flightTime;
+	double maxLoadCapacity;
+	double maxSpeed;
+	double maxFlightTime;
 	double chargingTime;
 
 
@@ -18,5 +18,11 @@ private:
 public:
 	Drone(string serialNumber, bool typeDrone);
 	~Drone();
+	string getSerialNumber();
+	bool getTypeDrone();
+	double getMaxLoadCapacity();
+	double getMaxSpeed();
+	double getMaxFlightTime();
+	double getChargingTime();
 };
 

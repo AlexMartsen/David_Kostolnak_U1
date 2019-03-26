@@ -12,7 +12,9 @@ public:
 
 	Vehicle(string numberPlate,double loadCapacity,double operatingCosts);
 	~Vehicle();
-	void writeVehicle();
+	string getNumberPlate();
+	double getLoadCapacity();
+	double getOperatingCosts();
 	
 };
 

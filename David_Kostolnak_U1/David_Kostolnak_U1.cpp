@@ -4,12 +4,20 @@
 #include "pch.h"
 #include <iostream>
 #include "heap_monitor.h"
+#include "Company.h"
 
 int main()
 {
 	initHeapMonitor();
-    std::cout << "Hello World!\n";
-
+	auto* company1 = new Company();
+	auto* vehicle1 = new Vehicle("BA12345",1200.0,100);
+	
+	company1->addVehicleToPark(vehicle1);
+	company1->writeVehiclesAddedToPark(vehicle1);
+	cout << "Mohlo by to ist ci??" << endl;
+    cout << "Hello World!\n";
+	
+    return 0;
 
 }
 
